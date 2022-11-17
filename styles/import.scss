@@ -1,0 +1,35 @@
+$spacings: (
+  negative: -2,
+  none: 0,
+  tiny: 0.5,
+  x-small: 1,
+  smaller: 1.5,
+  small: 2,
+  medium: 3,
+  large: 4,
+  x-large: 5,
+  xx-large: 6,
+  3x-large: 7,
+  4x-large: 8,
+  5x-large: 10,
+);
+
+$base-unit: 1rem;
+
+@function with-unit($size) {
+  @return map-get($spacings, $size) * $base-unit;
+}
+
+@mixin spacing($property: "padding", $size: "base", $direction: "") {
+  $value: with-unit($size);
+
+  @if ($direction == "horizontal") {
+    #{$property}-left: $value;
+    #{$property}-right: $value;
+  } @else if ($direction == "vertical") {
+    #{$property}-top: $value;
+    #{$property}-bottom: $value;
+  } @else {
+    #{$property}: $value;
+  }
+}

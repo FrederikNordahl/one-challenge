@@ -1,0 +1,33 @@
+@import "import";
+
+.container {
+  min-height: 100vh;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: span 12;
+  background-color: var(--grey);
+
+  @include spacing(margin-bottom, x-large);
+
+  h1,
+  h2 {
+    grid-column-start: 2;
+    grid-column-end: span 8;
+  }
+}
+
+.calculator {
+  border: 1px solid var(--grey);
+  grid-column-start: 2;
+  grid-column-end: span 10;
+
+  @include spacing(padding, medium);
+}
+
+.diff {
+  font-size: 40px;
+  margin-bottom: 0;
+  @include spacing(margin-top, x-large);
+}
