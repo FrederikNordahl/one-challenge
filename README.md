@@ -23,7 +23,7 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm o
+  npm i
 ```
 
 Start the server
