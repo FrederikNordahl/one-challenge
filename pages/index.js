@@ -37,16 +37,11 @@ export default function Home() {
     fetchDiff();
   }, [dumbEnd, dumbStart, fetchDiff]);
 
-  console.log(difference);
-
   return (
     <article className={`${styles.container} grid`}>
       <header className={`${styles.header} grid`}>
         <AnimatedText>
           <h1>One.com code challenge</h1>
-        </AnimatedText>
-        <AnimatedText>
-          <h2>Made with next.js</h2>
         </AnimatedText>
       </header>
       <section className={styles.calculator}>

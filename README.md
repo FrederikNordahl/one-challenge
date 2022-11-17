@@ -1,17 +1,37 @@
-This is a code challenge for one.com
+# one.com code challenge
 
-## Getting Started
+This repo is for showcasing next.js splitup of api and frontend (and completing the code challenge)
 
-First, run the development server:
+I also used this opportunity to play a little with an animated text package that I'm considering throwin on npm.
+
+Lastly, I focused on displaying the versatility of next.js and it's api backend. I was going to also add server-side renderen components and stream it into the app, but time runs fast :(
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/FrederikNordahl/one-challenge.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-## Check it out on vercel:
+```bash
+  cd one-challenge
+```
 
-[https://one.desperate.dk](https://one.desperate.dk)
+Install dependencies
+
+```bash
+  npm o
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## Demo
+
+https://one.desperate.dk
